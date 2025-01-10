@@ -19,8 +19,8 @@ try {
 
 async function send_request() {
     try {
-        const path = "admin-ag1/adminAgt1/performance/v2";
-        const url = `${process.env.BASEURL}/${path}`;
+        
+        const url = `${process.env.BASEURL}/${process.env.PATHURL}`;
         console.log(`Sending request to: ${url}`);
 
         const response = await axios.post(url, body, {
